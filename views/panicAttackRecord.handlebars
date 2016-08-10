@@ -1,21 +1,29 @@
-Date
+	<h3>Date</h3>
+<input id="datePicker" type="date">
+	<h3>Time Began </h3>
+<input type="time">
 
-time began
-
-Trigger
-
-expected unexpected
+	<h3>Triggers</h3>
 
 <input type="radio" name="expect"> Expected
 <input type="radio" name="expect"> Unexpected
 
-1-10 scale
+	<h3>MAX FEAR</h3>
+	<p>1 is none 10 is extreme </p>
+<ul class="list-inline">
+  <li><input name="maxFear" type="radio">1</li>
+  <li><input name="maxFear" type="radio">2</li>
+  <li><input name="maxFear" type="radio">3</li>
+  <li><input name="maxFear" type="radio">4</li>
+  <li><input name="maxFear" type="radio">5</li>
+  <li><input name="maxFear" type="radio">6</li>
+  <li><input name="maxFear" type="radio">7</li>
+  <li><input name="maxFear" type="radio">8</li>
+  <li><input name="maxFear" type="radio">9</li>
+  <li><input name="maxFear" type="radio">10</li>
+</ul>
 
-check all aymptoms present to at least a mild degree
-	<h3>Date</h3>
-<input type="date">
-	<h3>Time </h3>
-<input type="time">
+	<h3>Triggers</h3>
 
 	<h2>check all aymptoms present to at least a mild degree</h2>
 <ul>
@@ -39,3 +47,10 @@ check all aymptoms present to at least a mild degree
 
 	<h3>Behaviors</h3>
 	<input type="text">
+
+	<script>
+	alert('hello')
+		$(document).ready( function() {
+    $('#datePicker').val(new Date().toDateInputValue());
+	});​
+	</script>
