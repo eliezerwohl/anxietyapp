@@ -1,0 +1,75 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*.question{
+  color:red;
+  width:100px;
+}
+*/
+
+p{
+  font-size:1.20em;
+}
+
+#warning{
+  margin-top: 5px;
+  color:red;
+display: none;
+}
+.btn-xl {
+ margin-top:30px;
+ margin-bottom:10px;
+ padding-top:30px ;
+ padding-bottom: 30px;
+ font-size: 1.75em;
+}
+
+.xl {
+
+ margin-bottom:10px;
+ padding-top:30px ;
+ padding-bottom: 30px;
+ font-size: 1.75em;
+}
+.modalFooter{
+  margin-top: 10px;
+}
+
+#newPatient, #searchPatient, #viewAll, #logOut {
+  display: none;
+}
+.glyphicon-search{
+/*  font-size:2em;
+  top-margin:10px;*/
+}
+#loginButton{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.glyphicon-arrow-left{
+  margin-right:20px;
+/*  font-size: 20px;*/
+}
+
+.glyphicon, .glyphicon-search{
+/*font-size:20px;*/
+margin-right:10px;
+}
+.modal .btn {
+margin-bottom:10px;
+ 
+}
+.content{
+  margin-top: 30px;
+}
+
+#clientSearchButton{
+  margin-top: 15px;
+}
+body{
+  margin-bottom: 20px
+}
