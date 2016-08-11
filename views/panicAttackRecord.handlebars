@@ -1,0 +1,59 @@
+<form method="POST" action="/panicAttack">	
+
+	<h3>Date</h3>
+<input id="datePicker" name="date" type="date">
+	<h3>Time Began </h3>
+<input name="time" type="time">
+
+	<h3>Triggers</h3>
+
+<input type="radio" name="expect"> Expected
+<input type="radio" name="expect"> Unexpected
+
+	<h3>MAX FEAR</h3>
+<select name="fear">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+
+	<h3>Triggers</h3>
+
+	<h2>check all aymptoms present to at least a mild degree</h2>
+<ul>
+	<li><input name="trigger" value="chest pain or discomfort" type="checkbox">Chest pain or discomfort</li>
+	<li><input name="trigger" value="value2" type="checkbox">sweating</li>
+	<li><input name="trigger" value="heart racing/palpitations/pounding"type="checkbox">heart racing/palpitations/pounding</li>
+	<li><input name="trigger" value="nasua/upset stomach" type="checkbox">nasua/upset stomach</li>
+	<li><input name="trigger" value="shortness of breathe" type="checkbox">shortness of breath</li>
+	<li><input name="trigger" value="dizzy/unsteady/lightheaded/faint" type="checkbox">dizzy/unsteady/lightheaded/faint</li>
+	<li><input name="trigger" value="shaking/trembling" type="checkbox">shaking/trembling</li>
+	<li><input name="trigger" value="chills/hotflashes" type="checkbox">chills/hotflushes</li>
+	<li><input name="trigger" value="numbness" type="checkbox">numbness</li>
+	<li><input name="trigger" value="feelings of unreality" type="checkbox">feeligs of unreality</li>
+	<li><input name="trigger" value="feelings of choking" type="checkbox">feelings of choking</li>
+	<li><input name="trigger" value="fear of dying" type="checkbox">fear of dying</li>
+	<li><input name="trigger" value= "fear of losing control/going insane" type="checkbox">fear of losing control/going insane</li>
+</ul>
+
+	<h3>Thought </h3>
+	<input name="thought" type="text">
+
+	<h3>Behaviors</h3>
+	<input name="behavior" type="text">
+ <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+	</form>
+
+	<script>
+	alert('hello')
+		$(document).ready( function() {
+    $('#datePicker').val(new Date().toDateInputValue());
+	});​
+	</script>
