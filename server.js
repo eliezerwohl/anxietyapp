@@ -144,7 +144,6 @@ app.post('/adminCreate', function(req, res) {
         email: req.body.email,
         password: saltyhash(req.body.password),
         phone:req.body.phone,
-        OrganizationId:req.session.OrganizationId,
         admin:false 
       }).then(function() {
         res.redirect("/admin?msg=You have created a new user!");
@@ -153,25 +152,16 @@ app.post('/adminCreate', function(req, res) {
   });
 });
 
-app.get('/loggedin', isAuth, function(req, res) {
-
+app.get('/loggedin', function(req, res) {
+  debugger
   models.User.findAll({
     where: [{
       email: req.user.username
     }]
   }).then(function(User) {
-    req.session.OrganizationId = User[0].dataValues.OrganizationId;
-    req.session.firstname = User[0].dataValues.firstname;
-    req.session.lastname = User[0].dataValues.lastname;
+    debugger
     req.session.UserId= User[0].dataValues.id;
-    req.session.Admin  = User[0].dataValues.admin;
-    
-    console.log(req.session.Admin)
-     if (req.session.Admin==true){
-    res.render("admin");
-  }
-    else{
-    res.render("loggedIn")}
+    res.render("loggedIn")
     });
   });
 
@@ -276,7 +266,17 @@ app.get("/questionCreate", function(req, res){
 });
 
 app.post("/panicAttack", function(req, res){
-  debugger
+  models.PanicAttack.create({
+  behavior:req.body.behavior,
+  thought:req.body.thought,
+  trigger:req.body.trigger.toString(),
+  fear:req.body.fear, 
+  date:req.body.date,
+  time:req.body.time,
+  UserId:req.session.UserId,
+  }).then(function(data){
+    res.send("got it")
+  })
 })
 
 app.post("/questionCreate", function(req, res){

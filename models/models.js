@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'production') {
   var connection = new Sequelize(process.env.JAWSDB_URL);
 } else {
   // LOCAL DB
-  var connection = new Sequelize('mmdb', 'root');
+  var connection = new Sequelize('anxietyapp', 'root');
 }
 
 var BulkQuestion = connection.define("BulkQuestion", {
@@ -40,7 +40,6 @@ var PatientComment = connection.define('Question', {
 var PanicAttack = connection.define('PanicAttack', {
   behavior:Sequelize.STRING,
   thought:Sequelize.STRING,
-  triggers:Sequelize.STRING,
   fear:Sequelize.INTEGER,
   trigger:Sequelize.STRING,
   date:Sequelize.DATEONLY,
