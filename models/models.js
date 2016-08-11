@@ -37,6 +37,16 @@ var PatientComment = connection.define('Question', {
   comment:Sequelize.STRING
 });
 
+var PanicAttack = connection.define('PanicAttack', {
+  behavior:Sequelize.STRING,
+  thought:Sequelize.STRING,
+  triggers:Sequelize.STRING,
+  fear:Sequelize.INTEGER,
+  trigger:Sequelize.STRING,
+  date:Sequelize.DATEONLY,
+  time:Sequelize.TIME,
+})
+
 var Question = connection.define('Question', {
   question: Sequelize.STRING,
   answer: Sequelize.STRING
@@ -59,6 +69,11 @@ var User = connection.define('User', {
   admin:{type:Sequelize.BOOLEAN, default:false}
 
 });
+
+User.hasMany(PanicAttack);
+PanicAttack.belongsTo(User);
+
+
 Organization.hasMany(User);
 User.belongsTo(Organization);
 
@@ -92,6 +107,7 @@ Note.belongsTo(Organization);
 connection.sync();
 exports.Organization=Organization;
 exports.User=User;
+exports.PanicAttack=PanicAttack;
 exports.Question=Question;
 exports.PatientComment=PatientComment;
 exports.Note=Note;

@@ -275,6 +275,10 @@ app.get("/questionCreate", function(req, res){
   res.render("questionCreate")
 });
 
+app.post("/panicAttack", function(req, res){
+  debugger
+})
+
 app.post("/questionCreate", function(req, res){
   models.Question.create({
     question: req.body.question,
