@@ -38,6 +38,10 @@ select {
   border:1px black solid;
 }
 
+
+#triggerText {
+  margin-bottom: 10px
+}
 .btn-group .btn {
   margin-bottom: 5px;
 }
