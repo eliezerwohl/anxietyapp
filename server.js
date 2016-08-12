@@ -274,6 +274,7 @@ app.post("/panicAttack", function(req, res){
   date:req.body.date,
   time:req.body.time,
   UserId:req.session.UserId,
+  triggerText:req.body.triggerText
   }).then(function(data){
     res.send("got it")
   })
