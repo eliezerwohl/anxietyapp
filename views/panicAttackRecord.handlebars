@@ -10,84 +10,82 @@
 
 	<h4>Triggers</h4>
 
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn  btn-lg btn-primary"	>
+<div class="btn-group col-xs-12" data-toggle="buttons">
+  <label class="btn col-xs-12 col-sm-6  btn-lg btn-info"	>
     <input type="radio" name="expect" id="option1" autocomplete="off" checked> Expected
   </label>
-  <label class="btn btn-lg btn-primary">
+  <label class="btn  col-xs-12 col-sm-6 btn-lg btn-info">
     <input type="radio" name="expect" id="option2" autocomplete="off"> Unexpected
   </label>
 </div>
-<!-- 
-<input type="radio" name="expect"> Expected
-<input class="btn btn-defaut btn-md"type="radio" name="expect"> Unexpected -->
 
-	<h4>MAX FEAR</h4>
+
+<h4>MAX FEAR</h4>
 <select name="fear">
-  <option>1</option>
+	<option value="0">0 None</option>
+  <option value="1">1</option>
   <option>2</option>
-  <option>3</option>
+  <option value="3">3 Mild</option>
   <option>4</option>
-  <option>5</option>
+  <option value="5">5 Moderate</option>
   <option>6</option>
   <option>7</option>
-  <option>8</option>
+  <option value="8">8 Strong</option>
   <option>9</option>
-  <option>10</option>
+  <option value="10">10 Extreme</option>
 </select>
 
-	<h4>Triggers</h4>
-
-	<h4>check all aymptoms present to at least a mild degree</h4>
+	<h4>check all symptoms present to at least a mild degree</h4>
 	<div class="btn-group-vertical col-xs-12 col-sm-8 col-sm-offset-2" data-toggle="buttons">
-  <label class="btn btn-primary">
+  <label class="btn btn-default">
    <input name="trigger" value="chest pain or discomfort" type="checkbox">Chest pain or discomfort
   </label>
-  <label class="btn btn-primary">
+  <label class="btn btn-default">
     <input name="trigger" value="sweating" type="checkbox">sweating
   </label>
-  <label class="btn btn-primary">
+  <label class="btn btn-default">
     <input name="trigger" value="heart racing/palpitations/pounding"type="checkbox">heart racing/palpitations/pounding
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="nasua/upset stomach" type="checkbox">nasua/upset stomach
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="shortness of breathe" type="checkbox">shortness of breath
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="dizzy/unsteady/lightheaded/faint" type="checkbox">dizzy/unsteady/lightheaded/faint
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="shaking/trembling" type="checkbox">shaking/trembling
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="chills/hotflashes" type="checkbox">chills/hotflushes
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="numbness" type="checkbox">numbness
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="feelings of unreality" type="checkbox">feeligs of unreality
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="feelings of choking" type="checkbox">feelings of choking
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value="fear of dying" type="checkbox">fear of dying
   </label>
-   <label class="btn btn-primary">
+   <label class="btn btn-default">
     <input name="trigger" value= "fear of losing control/going insane" type="checkbox">fear of losing control/going insane
   </label>
 
 </div>
+<div class="row">
 
-	<h4>Thought </h4>
+	<h4 class="col-xs-12">Thought </h4>
 	<input class="col-xs-12" name="thought" type="text">
 
-	<h4>Behaviors</h4>
-	<input class="col-xs-12" name="behavior" type="text">
- <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+	<h4 class="col-xs-12">Behaviors</h4>
+	<input id="behave" class="col-xs-12" name="behavior" type="text">
+ <button type="submit" class="btn btn-lg btn-block btn-primary submit" >Submit</button>
 	</form>
 	</div>
 	</div>

@@ -34,17 +34,19 @@ select {
 
 } 
 
-.panicAttackRecord 
-
-.panicAttackRecord input[type=radio]{
-  font-size: 1.5em
-  padding:30px 30px;
-  border:1px red solid;
+.panicAttackRecord .btn-default.active {
+  border:1px black solid;
 }
-.panicAttackRecord ul li{
- list-style-type: none;
- font-size:1.5em;
- border-bottom: 1px lightgray solid;
+
+.btn-group .btn {
+  margin-bottom: 5px;
+}
+
+.panicAttackRecord #behave {
+  margin-bottom: 20px;
+}
+.btn-info.active {
+  border:1px black solid;
 }
 p{
   font-size:1.20em;
@@ -53,7 +55,7 @@ p{
 #warning{
   margin-top: 5px;
   color:red;
-display: none;
+  display: none;
 }
 .btn-xl {
  margin-top:30px;
