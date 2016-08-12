@@ -1,16 +1,28 @@
-<form method="POST" action="/panicAttack">	
+<div class="col-md-6 col-md-offset-3 panicAttackRecord">
+  <div class="panel panel-info">
+    <div class="panel-body">
+    <form method="POST" action="/panicAttack">	
 
-	<h3>Date</h3>
+	<h4>Date</h4>
 <input id="datePicker" name="date" type="date">
-	<h3>Time Began </h3>
+	<h4>Time Began </h4>
 <input name="time" type="time">
 
-	<h3>Triggers</h3>
+	<h4>Triggers</h4>
 
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn  btn-lg btn-primary"	>
+    <input type="radio" name="expect" id="option1" autocomplete="off" checked> Expected
+  </label>
+  <label class="btn btn-lg btn-primary">
+    <input type="radio" name="expect" id="option2" autocomplete="off"> Unexpected
+  </label>
+</div>
+<!-- 
 <input type="radio" name="expect"> Expected
-<input type="radio" name="expect"> Unexpected
+<input class="btn btn-defaut btn-md"type="radio" name="expect"> Unexpected -->
 
-	<h3>MAX FEAR</h3>
+	<h4>MAX FEAR</h4>
 <select name="fear">
   <option>1</option>
   <option>2</option>
@@ -24,32 +36,62 @@
   <option>10</option>
 </select>
 
-	<h3>Triggers</h3>
+	<h4>Triggers</h4>
 
-	<h2>check all aymptoms present to at least a mild degree</h2>
-<ul>
-	<li><input name="trigger" value="chest pain or discomfort" type="checkbox">Chest pain or discomfort</li>
-	<li><input name="trigger" value="value2" type="checkbox">sweating</li>
-	<li><input name="trigger" value="heart racing/palpitations/pounding"type="checkbox">heart racing/palpitations/pounding</li>
-	<li><input name="trigger" value="nasua/upset stomach" type="checkbox">nasua/upset stomach</li>
-	<li><input name="trigger" value="shortness of breathe" type="checkbox">shortness of breath</li>
-	<li><input name="trigger" value="dizzy/unsteady/lightheaded/faint" type="checkbox">dizzy/unsteady/lightheaded/faint</li>
-	<li><input name="trigger" value="shaking/trembling" type="checkbox">shaking/trembling</li>
-	<li><input name="trigger" value="chills/hotflashes" type="checkbox">chills/hotflushes</li>
-	<li><input name="trigger" value="numbness" type="checkbox">numbness</li>
-	<li><input name="trigger" value="feelings of unreality" type="checkbox">feeligs of unreality</li>
-	<li><input name="trigger" value="feelings of choking" type="checkbox">feelings of choking</li>
-	<li><input name="trigger" value="fear of dying" type="checkbox">fear of dying</li>
-	<li><input name="trigger" value= "fear of losing control/going insane" type="checkbox">fear of losing control/going insane</li>
-</ul>
+	<h4>check all aymptoms present to at least a mild degree</h4>
+	<div class="btn-group-vertical col-xs-12 col-sm-8 col-sm-offset-2" data-toggle="buttons">
+  <label class="btn btn-primary">
+   <input name="trigger" value="chest pain or discomfort" type="checkbox">Chest pain or discomfort
+  </label>
+  <label class="btn btn-primary">
+    <input name="trigger" value="sweating" type="checkbox">sweating
+  </label>
+  <label class="btn btn-primary">
+    <input name="trigger" value="heart racing/palpitations/pounding"type="checkbox">heart racing/palpitations/pounding
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="nasua/upset stomach" type="checkbox">nasua/upset stomach
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="shortness of breathe" type="checkbox">shortness of breath
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="dizzy/unsteady/lightheaded/faint" type="checkbox">dizzy/unsteady/lightheaded/faint
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="shaking/trembling" type="checkbox">shaking/trembling
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="chills/hotflashes" type="checkbox">chills/hotflushes
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="numbness" type="checkbox">numbness
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="feelings of unreality" type="checkbox">feeligs of unreality
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="feelings of choking" type="checkbox">feelings of choking
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value="fear of dying" type="checkbox">fear of dying
+  </label>
+   <label class="btn btn-primary">
+    <input name="trigger" value= "fear of losing control/going insane" type="checkbox">fear of losing control/going insane
+  </label>
 
-	<h3>Thought </h3>
-	<input name="thought" type="text">
+</div>
 
-	<h3>Behaviors</h3>
-	<input name="behavior" type="text">
+	<h4>Thought </h4>
+	<input class="col-xs-12" name="thought" type="text">
+
+	<h4>Behaviors</h4>
+	<input class="col-xs-12" name="behavior" type="text">
  <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
 	</form>
+	</div>
+	</div>
+	</div>
 
 	<script>
 	alert('hello')
