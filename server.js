@@ -274,6 +274,7 @@ app.post("/panicAttack", function(req, res){
   date:req.body.date,
   time:req.body.time,
   UserId:req.session.UserId,
+  challenge:req.session.challenge,
   triggerText:req.body.triggerText
   }).then(function(data){
     res.send("got it")
@@ -396,6 +397,17 @@ app.get("/searchResults", function(req, res){
 
 app.get("/test", function(req,res){
   res.render("test")
+})
+
+
+app.get("/viewAllAttacks", function (req, res) {
+  models.PanicAttack.findAll({
+    where: [{
+      id: req.session.UserId
+    }]
+  }).then(function(results){
+    res.render("viewAllAttacks", {results:results})
+    })
 })
 
 connection.sync()
