@@ -45,6 +45,7 @@ var PanicAttack = connection.define('PanicAttack', {
   triggerText:Sequelize.STRING,
   date:Sequelize.DATEONLY,
   time:Sequelize.TIME,
+  challenge:Sequelize.STRING,
 })
 
 var Question = connection.define('Question', {
